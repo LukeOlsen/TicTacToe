@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+  }
+  
+  td {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+  }
+  table {
+    border-collapse: collapse;
+    margin: auto;
+    z-index: 0;
+  }
+  .vert {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  .hori {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  
+  .hideThis {
+    display: none;
+  }
+  
+  .selectorArea {
+    margin-top: 100px;
+    z-index: 10;
+  }
+  
+  .square{
+    border: black solid 2px;
+  }
