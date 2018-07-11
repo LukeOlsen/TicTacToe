@@ -15,11 +15,6 @@ var selectorArea = document.querySelector(".selectorArea");
 var boardGame = document.querySelector(".boardGame");
 var humanTurn = false;
 
-/*
-0 1 2
-3 4 5
-6 7 8
-*/
 
 var boardTracker = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 var boardObject = {
@@ -778,6 +773,7 @@ chooseX.addEventListener("click", function() {
   human = "X";
   robot = "O";
   humanTurn = true;
+  resetButton.classList.remove("hideThis");
   selectorArea.classList.add("hideThis");
   boardGame.classList.remove("hideThis");
 });
@@ -787,6 +783,7 @@ chooseO.addEventListener("click", function() {
   robot = "X";
   humanTurn = true;
   selectorArea.classList.add("hideThis");
+  resetButton.classList.remove("hideThis");
   boardGame.classList.remove("hideThis");
 });
 
